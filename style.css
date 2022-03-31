@@ -14,7 +14,6 @@ html{
 
 .container{
     width: 100%;
-    overflow-x: hidden;
 }
 /*End of Common Styles */
 
@@ -25,6 +24,7 @@ html{
     background: url(images/desktop/image-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
 }
 
@@ -119,7 +119,7 @@ html{
     grid-row: 1;
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    max-height: 100%;
     overflow: hidden;
 }
 
@@ -132,8 +132,8 @@ html{
     grid-column:  1;
     grid-row: 2;
     object-fit: cover;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .transform,
@@ -207,12 +207,12 @@ html{
     justify-content: center;
     align-items: center;
     position: relative;
+    overflow: hidden;
 }
 
 .service-photo-heading{
     position: absolute;
     top: 70%;
-
     font-size: 3rem;
     letter-spacing: .2rem;
     font-weight: bolder;
@@ -230,3 +230,145 @@ html{
     color: #444;
 }
 /*End of Section 2*/
+
+/*!*Section 3*!*/
+.section-3{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.clients-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.client{
+    width: 30rem;
+    height: 50rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.section-3-heading{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 5rem;
+    margin-top: 10rem;
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    color: #777;
+}
+
+.client-img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    margin: 2rem 0;
+    border-radius: 50%;
+}
+
+.client-remarks{
+    font-size: 1.4rem;
+    margin: 2.5rem 0;
+    line-height: 1.8rem;
+    text-align: justify;
+    font-weight: 600;
+    color: #777;
+}
+
+.client-name{
+    margin-top: 5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.client-position{
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #777;
+    font-weight: 700;
+}
+/*!*End of Section 3*!*/
+
+/*!*!*Section 4*!*!*/
+.section-4{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.gallery-image{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.footer-wrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    background-color: darkseagreen;
+}
+
+.footer-heading{
+    padding: 4rem 0;
+    font-size: 3rem;
+    color: darkgreen;
+    font-weight: bold;
+}
+
+.footer-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4rem;
+}
+
+.footer-nav a{
+    width: 8rem;
+    display: block;
+    padding: 5px 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: darkgreen;
+    z-index: 10;
+    align-items: center;
+    justify-items: center;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-icons-link{
+    padding: 5px 15px;
+    display: block;
+    margin-bottom: 5rem;
+}
+.attribution p{
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: darkgreen;
+    padding: 5rem 0;
+}
+/*End of Section 4*/
